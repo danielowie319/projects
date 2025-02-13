@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Survey Form</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">Survey Form<h1>
+    <p id="description">Thank you for your time and please take this survey to give us your experience on our platform and know where we can improve on.</p>
+    <form id="survey-form">
+      <label id="name-label">Your Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+      <label id="email-label">Your email</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+      <label id="number-label">Your Age</label>
+      <input id="number" type="number" placeholder="Enter your age" min="12"
+      max="120">
+      <label id="select">What is your current status?</label>
+     <select id="dropdown" placeholder="What is your status">
+       <option>Student</option>
+       <option>Part-time worker</option>
+       <option>Full-time worker</option>
+       <option>Other</option>
+     </select>
+     <h3>Would you recommend this website to anyone?</h3>
+    <label> <input type="radio" value="reco" name="reco">Yes</label>
+      <label><input type="radio" value="reco" name="reco">No</label>
+       <label><input type="radio" value="reco" name="reco">Probably</label>
+       
+       <h3>Please select the areas which you think we can improve on</h3>
+    <label><input type="checkbox" value="improvements">Our homepage layout</label> 
+    <label><input type="checkbox" value="improvements">Our courses</label> 
+    <label><input type="checkbox" value="improvements">Videos</label> 
+    <label><input type="checkbox" value="improvements">Range of content</label> 
+    <label><input type="checkbox" value="improvements">Wiki</label> 
+    <label><input type="checkbox" value="improvements">Info</label> 
+
+    <h3>Make a comment</h3>
+     <textarea placeholder="Comment">
+       
+     </textarea>
+     <label><input id="submit" type="submit"></label>
+      </form>
+  </body>
+</html>
